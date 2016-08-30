@@ -1,3 +1,9 @@
+main {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	background: #000;
+}
 header {
 	background-image: url("../img/siliconvalley07.jpg");
 	background-repeat: no-repeat;
@@ -5,4 +11,59 @@ header {
 	background-size: cover;
 	height: 100vh;
 	width: 100%;
+}
+
+div#logo {
+	padding-top: 35%;
+	text-align: center;
+}
+
+
+section.character {
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	display: block;
+	min-width: 100%;
+}
+
+#rounded-img{
+	border-radius: 250px;
+	border: 0.5px solid;
+	margin: 0 auto;
+	display: block;
+}
+
+div.character-img {
+	padding-top:1%;
+	min-width: 100%;
+}
+
+div.character-name {
+	text-align: center;
+	font-size: 46px;
+	padding-top: 1%;
+	width: 100%;
+	min-width: 100%;
+	font-family: 'Lobster', cursive;
+
+}
+
+div.character-quote{
+	font-size: 20px;
+	font-style: italic;
+	padding-top: 0.5%;
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+}
+
+div.character-bio{
+	padding-top: 2%;
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Muli', sans-serif;
+	line-height: 150%;
 }
