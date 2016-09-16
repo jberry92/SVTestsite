@@ -12,16 +12,18 @@
 </head>
 
 <body>
-	<nav>
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">Logo</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="sass.html">Characters</a></li>
-				<li><a href="badges.html">Episodes</a></li>
-				<li><a href="collapsible.html">Recommendations</a></li>
-			</ul>
-		</div>
-	</nav>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Logo</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="sass.html">Seasons</a></li>
+					<li><a href="badges.html">Episodes</a></li>
+					<li><a href="collapsible.html">Similar</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 	<header>
 		<div id="logo">
 			<img src="img/logo.png"><img>
@@ -31,29 +33,28 @@
 
 
 	<main>
-		<section class="container">
-			<div class="character-img">
-				<img src="img/bachman.jpg" id="rounded-img"> </img>
+		<section id="seasons" class='valign-wrapper'>
+			<div class='container valign' id='seasonSelectors'>
+				<div class="row valign">
+					<a class='waves-effect waves-light btn col s3'  id='seasonOne'>Season 1</a>
+					<a class='waves-effect waves-light btn col s3'  id='seasonTwo'>Season 2</a>
+				</div>
+				<div id='title'>
+
+				</div>
+				<div id='airDate'>
+
+				</div>
+				<div id='overview'>
+
+				</div>
+
+				<div id='poster'>
+				</div>
+
 			</div>
-
-			<div class='character-name'>
-				<h1>Erlich Bachman</h1>
-			</div>
-
-			<div class='character-quote'>
-				<q>"One of you is one of the least attractive people I've ever met and I'm not going to say which one."</q>
-			</div>
-
-			<div class='character-bio'>
-
-				<p> 'Erlich Blockman' is a software designer, founder of the company Aviato, and a main character in HBO's Silicon Valley.</p>
-
-				<p>Erlich administers the Hacker Hostel, a tech incubator where Richard, Big Head, Dinesh, and Gilfoyle live and work in exchange for 10 percent of their potential businesses. Erlich clings to his glory days, when he sold aviation start-up Aviato, a
-					move that, at least in his mind, qualifies him to be a svengali lording over other tech nerds. He still drives a car emblazoned with multiple Aviato logos and smokes copious amounts of weed.</p>
-
-			</div>
-
 		</section>
+	</main>
 
 
 </body>
