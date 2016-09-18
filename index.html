@@ -15,11 +15,11 @@
 	<div class="navbar-fixed">
 		<nav>
 			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">Logo</a>
+				<a href="#" class="brand-logo"><img src='./img/logo.png' id='navBarLogo'></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="sass.html">Seasons</a></li>
-					<li><a href="badges.html">Episodes</a></li>
-					<li><a href="collapsible.html">Similar</a></li>
+					<li><a id='season'>Seasons</a></li>
+					<li><a id='episode'>Episodes</a></li>
+					<li><a id='recommendations'>Similar</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -36,8 +36,8 @@
 		<section id="seasons" class='valign-wrapper'>
 			<div class='container valign' id='seasonSelectors'>
 				<div class="row valign">
-					<a class='waves-effect waves-light btn col s3'  id='seasonOne'>Season 1</a>
-					<a class='waves-effect waves-light btn col s3'  id='seasonTwo'>Season 2</a>
+					<a class='waves-effect waves-light btn col s3' id='seasonOne'>Season 1</a>
+					<a class='waves-effect waves-light btn col s3' id='seasonTwo'>Season 2</a>
 				</div>
 				<div id='title'>
 
@@ -53,6 +53,51 @@
 				</div>
 
 			</div>
+		</section>
+
+		<section id='episodes'>
+			<div class='container valign' id='seasonSelectors'>
+				<div class="row valign">
+					<a class='waves-effect waves-light btn col s3' id='seasonOneEpsiodes'>Season 1</a>
+					<a class='waves-effect waves-light btn col s3' id='seasonTwoEpisodes'>Season 2</a>
+				</div>
+				<table class='highlight'>
+					<thead>
+						<tr>
+							<th data-field="id">Name</th>
+							<th data-field="name">Overview</th>
+							<th data-field="price">Air Date</th>
+						</tr>
+					</thead>
+
+					<tbody id='episodeData'>
+
+					</tbody>
+				</table>
+
+
+		</section>
+
+		<section id='similar'>
+			<div class="container">
+
+
+				<table class='highlight'>
+					<thead>
+						<tr>
+							<th data-field="id">Name</th>
+							<th data-field="name">Overview</th>
+							<th data-field="price">Air Date</th>
+						</tr>
+					</thead>
+
+					<tbody id='similarProg'>
+
+					</tbody>
+				</table>
+			</div>
+
+
 		</section>
 	</main>
 
