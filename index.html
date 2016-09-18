@@ -8,25 +8,30 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.css" media='screen,projection'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>Silicon Valley</title>
 </head>
 
 <body>
-	<div class="navbar-fixed">
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo"><img src='./img/logo.png' id='navBarLogo'></a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a id='season'>Seasons</a></li>
-					<li><a id='episode'>Episodes</a></li>
-					<li><a id='recommendations'>Similar</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+	<nav>
+	  <div class="nav-wrapper">
+	    <a href="#!" class="brand-logo"><img src='./img/logo.png' id='navBarLogo'></a>
+	    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	    <ul class="right hide-on-med-and-down">
+	      <li><a class='seasons'>Seasons</a></li>
+	      <li><a class='episodes'>Episodes</a></li>
+	      <li><a class='recommendations'>Similar</a></li>
+	    </ul>
+	    <ul class="side-nav" id="mobile-demo">
+	      <li><a class='seasons'>Seasons</a></li>
+	      <li><a class='episodes'>Episodes</a></li>
+	      <li><a class='recommendations'>Similar</a></li>
+	    </ul>
+	  </div>
+	</nav>
 	<header id='splashPage'>
 		<div id="logo">
-			<img src="img/logo.png"><img>
+			<img src="img/logo.png" class='responsive-img'><img>
 		</div>
 	</header>
 
@@ -36,8 +41,9 @@
 		<section id="seasons">
 			<div class='container' id='seasonSelectors'>
 				<div class="row">
-					<a class='waves-effect waves-light btn col s3' id='seasonOne'>Season 1</a>
-					<a class='waves-effect waves-light btn col s3' id='seasonTwo'>Season 2</a>
+					<a class='waves-effect waves-light btn col s5' id='seasonOne'>Season 1</a>
+					<a class='col s2'></a>
+					<a class='waves-effect waves-light btn col s5' id='seasonTwo'>Season 2</a>
 				</div>
 				<div id='title'>
 
@@ -63,7 +69,7 @@
 				</div>
 				<table class='highlight'>
 					<thead>
-						<tr>
+						<tr class='card-panel blue lighten 2'>
 							<th data-field="id">Name</th>
 							<th data-field="name">Overview</th>
 							<th data-field="price">Air Date</th>

@@ -3,20 +3,45 @@ main {
 	/*margin: 0 auto;*/
 	/*height: 100vh;*/
 }
-header {
-	background-image: url("../img/siliconvalley07.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 100vh;
-	width: 100%;
+
+body{
+	  background: url("./img/siliconvalley07.jpg") center center cover no-repeat fixed;
 }
+/*header {
+	background-image: url("../img/siliconvalley07.jpg");
+	background-position: center center;
+
+   /* Background image doesn't tile */
+   /*background-repeat: no-repeat;*/
+
+   /* Background image is fixed in the viewport so that it doesn't move when
+      the content's height is greater than the image's height */
+   /*background-attachment: fixed;*/
+
+   /* This is what makes the background image rescale based
+      on the container's size */
+   /*background-size: cover;*/
+
+   /* Set a background color that will be displayed
+      while the background image is loading */
+   /*background-color: #464646;*/
+	/*height: 100%;*/
+	/*width: 100%;*/
+/*}*/
 
 div#logo {
 	padding-top: 35%;
 	text-align: center;
 }
 
+/*.btn{
+	padding: 0 2em;
+}*/
+
+.center{
+	display: block;
+	margin: 0 auto;
+}
 /*#container{
 	margin-top: 50px;
 }*/
@@ -28,11 +53,25 @@ div#logo {
 	display: block;
 }
 
-
+p {
+	font-size: 16px;
+	padding-top: .5em;
+}
 section {
 	height: 100vh;
 }
 
 #navBarLogo{
 	height:64px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em auto;
+    padding: 0;
+		padding-top: 1em;
+		width: 80%;
 }

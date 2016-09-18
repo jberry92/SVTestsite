@@ -1,6 +1,7 @@
 $(function() {
 
     function initialize() {
+        $(".button-collapse").sideNav();
         $seasonName = $('#title');
         $airDate = $('#airDate');
         $seasonOverview = $('#overview');
@@ -24,19 +25,19 @@ $(function() {
         $('#seasonTwoEpisodes').on('click', function() {
             getEpisodeData(2);
         })
-        $('#season').on('click', function() {
+        $('.seasons').on('click', function() {
             $('#seasons').show();
             $('#splashPage').hide();
             $('#episodes').hide();
             $('#similar').hide();
         })
-        $('#episode').on('click', function() {
+        $('.episodes').on('click', function() {
             $('#episodes').show();
             $('#splashPage').hide();
             $('#seasons').hide();
             $('#similar').hide();
         })
-        $('#recommendations').on('click', function() {
+        $('.recommendations').on('click', function() {
             getSimilar();
             $('#similar').show();
             $('#splashPage').hide();
@@ -57,26 +58,26 @@ $(function() {
         var dataCall = $.get('https://api.themoviedb.org/3/tv/60573/season/' + season + '?api_key=4fbf35c945e96e2f343d00d0ddcea967',
             function(data) {
                 console.log(data);
-                $seasonName.html(data.name);
-                $airDate.html(data.air_date);
-                $seasonOverview.html(data.overview);
-                $seasonImages.html("<img id='theImg' src= https://image.tmdb.org/t/p/w500/" + data.poster_path + " '/>");
+                $seasonName.html('<h1>' + data.name + '</h1>');
+                $airDate.html('<h5>' + data.air_date + '</h5>');
+                $seasonOverview.html('<p>' + data.overview + '</p> \n <\hr>');
+                $seasonImages.html("<img id='theImg' class='responsive-img center' src= https://image.tmdb.org/t/p/w500/" + data.poster_path + " '/>");
             })
 
     }
 
-    function getEpisodeData(season){
-      console.log('in the function')
-      var html;
-      var dataCall = $.get('https://api.themoviedb.org/3/tv/60573/season/' + season + '?api_key=4fbf35c945e96e2f343d00d0ddcea967',
-          function(data) {
-              episodes = data.episodes;
-              episodes.forEach(function(episode) {
-                  // console.log(episode.name + " " + episode.overview);
-                  html += '<tr><td>' + episode.name + '</td><td>' + episode.overview + '</td><td>' + episode.air_date + '</td></tr>'
-              })
-              $('#episodeData').html(html);
-          })
+    function getEpisodeData(season) {
+        console.log('in the function')
+        var html;
+        var dataCall = $.get('https://api.themoviedb.org/3/tv/60573/season/' + season + '?api_key=4fbf35c945e96e2f343d00d0ddcea967',
+            function(data) {
+                episodes = data.episodes;
+                episodes.forEach(function(episode) {
+                    // console.log(episode.name + " " + episode.overview);
+                    html += '<tr><td>' + episode.name + '</td><td>' + episode.overview + '</td><td>' + episode.air_date + '</td></tr>'
+                })
+                $('#episodeData').html(html);
+            })
 
 
     }
